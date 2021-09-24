@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  text-align: -webkit-center;
+  background-color: #0f0f0f;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: -webkit-center;
+  margin-top: -120px;
+  min-height: 92vh;
+}
+
+.header {
+  overflow: hidden;
+  padding: 20px 60px;
+  max-width: 1400px;
+}
+
+.header a {
+  float: left;
+  text-align: center;
+  text-decoration: none;
+}
+
+.header a.logo {
+  width: 160px;
+}
+
+.header .active {
+  width: 260px;
+  height: 50px;
+  margin: 14px 0px;
+  background: none;
+  border: 1px solid #ffffff;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+.form {
+  display: grid;
+  margin: 32px 0px;
+}
+
+.label {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.input {
+  font-size: 1rem;
+    padding: 0.4rem 2.6rem;
+    line-height: 2.4rem;
+    border-radius: 12px;
+    background-color: white;
+    margin-bottom: 1rem;
+    border: 0px;
+    box-shadow: 2px 0px 22px 8px rgba(0,0,0,0.04);
+    -webkit-box-shadow: 2px 0px 22px 8px rgba(0,0,0,0.04);
+    -moz-box-shadow: 2px 0px 22px 8px rgba(0,0,0,0.04);
+    outline: none;
+    width: 48%;
+}
+
+.input:focus, .input:hover{
+  box-shadow: 2px 0px 12px 8px rgba(0,0,0,0.06);
+  -webkit-box-shadow: 2px 0px 12px 8px rgba(0,0,0,0.06);
+  -moz-box-shadow: 2px 0px 12px 8px rgba(0,0,0,0.06);
+}
+
+.icon {
+  margin-top: -54px;
+  margin-left: 12px;
+}
+
+.icon img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.button {
+  background-color: #2A9D8F;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 250ms;
+  width: 184px;
+  height: 50px;
+  margin-left: -32px;
+}
+
+.button:hover {
+  background-color: #33C1B1;
+  border: none;
+}
+
+.hero {
+  min-height: 68vh;
+  background-image: url("./img/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  max-width: 1400px;
+  text-align: initial;
+  padding: 236px 64px 0 64px;
+  color: #ffffff;
+  text-shadow: 0 0 15px #212326;
+}
+
+.sub-head {
+  font-weight: 100;
+  font-size: 26px;
+}
+
+.main-head {
+  font-size: 55px;
+}
+
+.quick-links {
+  font-size: 16px;
+  display: inline-block;
+  list-style: none;
+  padding: 0px 6px;
+}
+
+.quick-links li {
+  display: inline-block;
+}
+
+.quick-links a {
+  color: #ffffff;
+  padding: 0px 6px;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 64px;
+  max-width: 1400px;
+}
+
+.card {
+  height: 320px;
+  flex-grow: 1;
+  padding: 14px;
+  transition: 200ms;
+}
+
+.card:last-child {
+  flex-grow: 10;
+}
+
+.card--image {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+  border-radius: 6px;
+}
+
+.card--image:hover {
+
+  transition: 200ms;
+  
+}
+
+@media (max-aspect-ratio: 1/1) {
+  li {
+    height: 30vh;
+  }
+}
+
+@media (max-height: 480px) {
+  li {
+    height: 80vh;
+  }
+}
+
+@media (max-aspect-ratio: 1/1) and (max-width: 600px) {
+  ul {
+    flex-direction: row;
+  }
+
+  li {
+    height: auto;
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;
+  }
+}
+
+.footer {
+  height: 80px;
+  background-color: #1a2024;
+  padding: 26px 0px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.footer a {
+  color: #ffffff;
+}
